@@ -1,0 +1,73 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title {
+    position: relative;
+}
+
+.mywork-title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.mywork-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px;
+    width: 100%; /* Ensure it takes up full width of parent */
+}
+
+.mywork-container img {
+    box-sizing: border-box;
+    width: 100%;  /* Make images responsive to container size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the images cover the area without distortion */
+    border-radius: 10px; /* Optional: Round the corners of the images */
+    transition: 0.3s;
+    cursor: pointer;
+}
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid orangered;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+
+}
+
+.mywork-showmore img {
+    height: 24px;
+    width: 50px;
+}

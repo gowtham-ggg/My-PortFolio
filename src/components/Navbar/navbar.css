@@ -1,46 +1,44 @@
 .navbar{
-    height: 5rem;
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+    margin: 20px 170px;
 }
-.logo{
-    color: yellow;
-}
-span{
-    padding-left: 5px;
-    color: white;
-}
-.dmListItem{
-    margin:  1rem;
-    cursor: pointer;
-}
-.dmListItem:hover{
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
-}
-.desktopMenuBtn{
-    background: white;
-    color: black;
-    border: none;
+.nav-menu{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    border-radius: 2rem;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+.name{
+    position: relative;
+}
+.theme{
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 200px;
+}
+nav h1{
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #f6f4f3 50.41% , #B415FF 90.25%);
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%) ;
+    font-size: 22px;
     cursor: pointer;
+    transition: 0.5s;
 }
-.desktopMenuImg{
-    object-fit: cover;
-    height: 1rem;
-    width: 1rem;
-    margin: 1rem;
+.nav-connect:hover{
+    transform: scale(1.05);
 }
+img{
+ height: 100px;
+} 

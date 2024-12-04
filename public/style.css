@@ -5,13 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit","Poppins", sans-serif;
 }
 body{
-    background-color: rgb(30, 30, 30);
+    height: 100vh;
+    background-color: #161513;
     color: white;
-    overflow: hidden;
-    overflow-y: scroll;
 }

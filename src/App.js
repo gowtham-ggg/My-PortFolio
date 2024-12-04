@@ -1,10 +1,16 @@
 import Navbar from "./components/Navbar/Navbar";
-import Intro from "./components/intro/Intro";
+import Hero from "./components/Hero/Hero"
+import About from "./components/About/About";
+import Services from "./components/Servicess/Services";
+import { MyWork } from "./components/My Work/MyWork";
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Intro/>
+      <Hero/>
+      <About/>
+      <Services/>
+      <MyWork/>
     </div>
   );
 }

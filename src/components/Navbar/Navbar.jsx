@@ -1,21 +1,24 @@
 import React from 'react'
 import "./navbar.css"
-import contactImg from "../../assets/contact.png"
-import {Link} from "react-scroll";
+import theme_pattern from "../../assets/theme_pattern.svg"
+
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className='logo'>GOWTHAM<span>•</span></h1>
-      <div className="desktopMenu">
-        <Link className="dmListItem">HOME</Link>
-        <Link className="dmListItem">MY SKILLS</Link>
-        <Link className="dmListItem">ABOUT</Link>
-        <Link className="dmListItem">PORTFOLIO</Link>
+      <div className="name">
+      <h1>GOWTHAM G</h1>
       </div>
-      <button className='desktopMenuBtn'>
-        <img src={contactImg} alt="btn" className='desktopMenuImg'/>
-        Contact Me
-      </button>
+      <img src={theme_pattern} alt="theme" className='theme'/>
+      <ul className="nav-menu">
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+      <div className="nav-connect">
+        Connect With Me
+      </div>
     </nav>
   )
 }
