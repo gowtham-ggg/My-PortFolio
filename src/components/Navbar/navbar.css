@@ -42,3 +42,16 @@ nav h1{
 img{
  height: 100px;
 } 
+.underline{
+    height: 12px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
