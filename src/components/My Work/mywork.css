@@ -13,7 +13,7 @@
 
 .mywork-title h1 {
     padding: 0 30px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -70,4 +70,20 @@
 .mywork-showmore img {
     height: 24px;
     width: 50px;
+}
+
+@media (max-width: 768px){
+    .mywork{
+        width: 1100px;
+        margin: 0 20%;
+    }
+    .mywork-title h1{
+        font-size: 7rem;
+    }
+    .mywork-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mywork-showmore{
+        font-size: 3rem;
+    }
 }

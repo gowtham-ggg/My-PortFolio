@@ -12,7 +12,7 @@
 }
 .contact-title h1{
     padding: 0 30px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
 }
 .contact-title img{
@@ -36,7 +36,7 @@
     gap: 30px;
 }
 .contact-left h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
     background-clip: text;
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .contact-right label{
     color: #d8d8d8;
@@ -74,7 +74,7 @@
 }
 .contact-right input{
     border: none;
-    width: 700px;
+    width: 600px;
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
@@ -105,4 +105,48 @@
 .contact-submit:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+@media(max-width: 768px) {
+    .contact{
+        width: 1100px;
+    }
+    .contact-section{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-title h1{
+        font-size: 7rem;
+    }
+    .contact-left h1{
+        font-size: 6rem;
+    }
+    .contact-left p{
+        font-size: 3rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+    .contact-right{
+        margin-left: -130px;
+    }
+    .contact-detail p{
+        font-size: 2.5rem;
+    }
+    .contact-right label{
+        font-size: 3rem;
+    }
+    .contact-right input{
+        width: 90%;
+        font-size: 3rem;
+        height: 120px;
+    }
+    .contact-right textarea{
+        width: 90%;
+        font-size: 3rem;
+        height: 300px;
+    }
+    .contact-submit{
+        font-size: 3rem;
+        margin-top: 10px;
+    }
 }

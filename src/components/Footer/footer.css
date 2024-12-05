@@ -52,7 +52,7 @@
 
 .footer-bottom-right{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     margin-bottom: 50px;
 }
 .footer-email-input:hover{
@@ -61,4 +61,58 @@
 .subscribe-button:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+.fa-github:hover {
+    color: #333; 
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;  
+}
+
+.footer-bottom-right a{
+    text-decoration: none;
+    color: inherit;
+
+}
+@media(max-width:768px){
+    .footer{
+        width: 1100px;
+        margin:0 20%;
+        padding: 20px;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+    .footer-top-left{
+        max-width: 100%;
+    }
+    .footer-top-left img{
+        height: 150px;
+    }
+    .footer-top-left {
+        font-size: 2.5rem;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .footer-email-input input{
+        font-size: 3rem;
+        height: 55px;
+    }
+    .footer-email-input img{
+        height: 70px;
+    }
+    .subscribe-button{
+        font-size: 3rem;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+        font-size: 2.5rem;
+    }
+    .footer-bottom-right{
+        gap: 25px;
+    }
+    .footer-top-right{
+        flex-direction: column;
+    }
 }

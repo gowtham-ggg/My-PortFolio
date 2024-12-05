@@ -5,7 +5,7 @@ import UserIcon from "../../assets/user_icon.svg"
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div id="footer" className='footer'>
       <div className="footer-top">
     <div className="footer-top-left">
         <img src={footerIcon} alt="footer" />
@@ -30,6 +30,8 @@ const Footer = () => {
             <p>Term of Services</p>
             <p>Privacy Policy</p>
             <p>Connect With Me...</p>
+            <a href="https://github.com/gowtham-ggg" target='blank'><i class="fa-brands fa-github"></i></a>
+            <a href='https://www.linkedin.com/in/gowtham-g-a8a945220/' target='blank'><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </div>
     </div>

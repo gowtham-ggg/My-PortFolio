@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     gap: 35px;
+    width: 100%;
 }
 .profile{
     height: 200px;
@@ -52,9 +53,35 @@
     border: 2px solid #fff;
     cursor: pointer;
 }
+.hero-resume a{
+    text-decoration: none;
+    color: white;
+}
 .hero-resume:hover{
     border-color:#B415FF ;
 }
 .hero-connect:hover{
     border: 2px solid white;
+}
+@media(max-width: 768px){
+    .hero{
+        width: 1200px;
+        margin-bottom: 120px;
+    }
+    .hero img{
+        margin-top: 120px;
+        width: 260px;
+    }
+    .hero h1{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 50px;
+    }
+    .hero p{
+        font-size: 32px;
+    }
+    .hero-action{
+        font-size: 32px;
+    }
+   
 }
