@@ -65,23 +65,28 @@
 }
 @media(max-width: 768px){
     .hero{
-        width: 1200px;
-        margin-bottom: 120px;
+        width: 1100px;
+        margin: 120px 20%;
     }
     .hero img{
         margin-top: 120px;
-        width: 260px;
+        height: 600px;
+        padding: 20px;
+
     }
     .hero h1{
         margin: 0 auto;
         width: 80%;
-        font-size: 50px;
+        font-size: 4rem;
     }
     .hero p{
-        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 1.9;
+        width: 70%;
     }
     .hero-action{
-        font-size: 32px;
+        font-size: 2.7rem;
+        padding: 10px;
     }
    
 }
