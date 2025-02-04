@@ -29,22 +29,66 @@
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 40px;
     width: 100%; /* Ensure it takes up full width of parent */
+    transition: all 0.3s ease;
 }
 
 .mywork-container img {
     box-sizing: border-box;
-    width: 100%;  /* Make images responsive to container size */
+    width: 100%; /* Make images responsive to container size */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the images cover the area without distortion */
     border-radius: 10px; /* Optional: Round the corners of the images */
     transition: 0.3s;
     cursor: pointer;
 }
-.mywork-container img:hover{
+
+.mywork-container img:hover {
     transform: scale(1.10);
     border: 4px solid orangered;
     border-radius: 10px;
     transition: 0.3s;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-info {
+    opacity: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #1a73e8;
 }
 
 .mywork-showmore {
@@ -61,10 +105,10 @@
     transition: 0.6s;
     cursor: pointer;
 }
-.mywork-showmore:hover{
+
+.mywork-showmore:hover {
     gap: 30px;
     transition: 0.6s;
-
 }
 
 .mywork-showmore img {
@@ -72,18 +116,21 @@
     width: 50px;
 }
 
-@media (max-width: 768px){
-    .mywork{
+@media (max-width: 768px) {
+    .mywork {
         width: 1100px;
         margin: 0 20%;
     }
-    .mywork-title h1{
+
+    .mywork-title h1 {
         font-size: 7rem;
     }
-    .mywork-container{
+
+    .mywork-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    .mywork-showmore{
+
+    .mywork-showmore {
         font-size: 3rem;
     }
 }
