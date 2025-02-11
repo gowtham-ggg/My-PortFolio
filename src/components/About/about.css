@@ -84,7 +84,9 @@
     align-items: center;
     transition: 0.3s;
   }
-  
+  .about-skill h2{
+    color:  white;
+  }
   .about-skill p {
     min-width: 150px;
     font-size: 24px;
