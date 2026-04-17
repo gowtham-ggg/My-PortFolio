@@ -1,0 +1,149 @@
+.pipeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 170px;
+}
+
+.pipeline-title {
+    position: relative;
+}
+
+.pipeline-title h1 {
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.pipeline-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.pipeline-subtitle {
+    font-size: 18px;
+    color: #a0a0b8;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.pipeline-stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.pipeline-stage {
+    background: #1e1e28;
+    border: 1.5px solid #32323c;
+    border-radius: 12px;
+    padding: 28px;
+    transition: border-color 0.3s;
+    cursor: default;
+}
+
+.pipeline-stage:hover {
+    border-color: #DF8908;
+    background: linear-gradient(135deg, #1e1e28 60%, #281800);
+    transition: 0.4s;
+}
+
+.pipeline-stage-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.pipeline-stage-no {
+    font-size: 13px;
+    font-weight: 700;
+    color: #DF8908;
+    background: #281800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #3a2a10;
+    white-space: nowrap;
+}
+
+.pipeline-stage-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.pipeline-stage p {
+    font-size: 14px;
+    color: #a0a0b8;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.pipeline-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.pipeline-tool {
+    background: #12121a;
+    color: #B415FF;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #3a1a50;
+}
+
+@media (max-width: 768px) {
+    .pipeline {
+        width: 1100px;
+        margin: 0 20%;
+        margin-bottom: 120px;
+        gap: 60px;
+    }
+
+    .pipeline-title h1 {
+        font-size: 7rem;
+    }
+
+    .pipeline-subtitle {
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .pipeline-stages {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pipeline-stage {
+        padding: 40px;
+    }
+
+    .pipeline-stage-header h3 {
+        font-size: 3rem;
+    }
+
+    .pipeline-stage-no {
+        font-size: 2rem;
+        padding: 8px 16px;
+    }
+
+    .pipeline-stage p {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+    .pipeline-tool {
+        font-size: 2rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,111 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+.name{
+    position: relative;
+}
+.theme{
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 200px;
+}
+nav h1{
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #f6f4f3 50.41% , #B415FF 90.25%);
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%) ;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+img{
+ height: 100px;
+} 
+.underline{
+    height: 12px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    height: 20px;
+    width: 50px;
+}
+.nav-close{
+    display: none;
+}
+.nav-open{
+    display: none;
+}
+@media (max-width : 768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 25px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+}
